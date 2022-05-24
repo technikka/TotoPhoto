@@ -2,13 +2,14 @@
 
 <%= form_with method: :get do |form| %>
   <%= form.label :id, "Flickr User's ID: "  %>
-  <%= form.text_field :id  %>
+  <%= form.text_field :id, value: '94321001@N00'  %>
   <%= form.submit "Submit" %>
-<% end %>
+<% end %> <br>
 
 <% if @photos %>
   <% @photos.each do |photo| %>
     <div>
+      <h4><%= photo.attributes['title'].value %></h4>
       <%= image_tag photo.attributes['url_m'].value
  %>
     </div>

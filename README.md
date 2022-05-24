@@ -1,24 +1,13 @@
-# README
+# Toto Photo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An [Odin](https://www.theodinproject.com/lessons/ruby-on-rails-flickr-api) project to practice using a third party API. In the case of this project: Flickr's API.
 
-Things you may want to cover:
+This super simple app has a single form field to take a Flickr user's ID and display that user's photos.
 
-* Ruby version
+This project is a nice starter reference for using the following gems:
 
-* System dependencies
+* RestClient, used for calling the api.
 
-* Configuration
+* Nokogiri, used for parsing/searching the xml returned by the api.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Figaro, used for setting/storing environmnet variables for my api key, etc. 
