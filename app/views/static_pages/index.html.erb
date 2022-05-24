@@ -1,0 +1,16 @@
+<h3>Display Flickr Photos</h3>
+
+<%= form_with method: :get do |form| %>
+  <%= form.label :id, "Flickr User's ID: "  %>
+  <%= form.text_field :id  %>
+  <%= form.submit "Submit" %>
+<% end %>
+
+<% if @photos %>
+  <% @photos.each do |photo| %>
+    <div>
+      <%= image_tag photo.attributes['url_m'].value
+ %>
+    </div>
+  <% end %>
+<% end %>
